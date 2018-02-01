@@ -1,0 +1,30 @@
+spring:
+      datasource:
+        url: jdbc:mysql://@db.address@/@db.name@?createDatabaseIfNotExist=true
+        username: @db.username@
+        password: @db.password@
+        data: classpath:/sample-data.sql
+
+      jpa:
+        hibernate:
+          ddl-auto: create
+        properties:
+          hibernate.dialect : @hibernate.dialect@
+
+      jackson:
+          default-property-inclusion: non_null
+
+logging:
+      level:
+          com.rsupport.webviewer : trace
+          org.hibernate.SQL : debug
+          org.hibernate.type.descriptor.sql.BasicBinder : trace
+
+key:
+      chang : 윤창희
+
+
+
+
+
+
