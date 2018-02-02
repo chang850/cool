@@ -1,4 +1,4 @@
-package com.rsupport.webviewer.web.support;
+package com.rsupport.webviewer.core.service;
 
 import com.rsupport.webviewer.core.domain.SupportRoom;
 

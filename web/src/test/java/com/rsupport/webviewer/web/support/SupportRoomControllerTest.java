@@ -23,9 +23,9 @@ public class SupportRoomControllerTest {
 
     @Autowired
     private MockMvc mvc;
-
-    @MockBean
-    private SupportRoomManager supportRoomManager;
+//
+//    @MockBean
+//    private SupportRoomManager supportRoomManager;
 
     @Ignore
     @Test

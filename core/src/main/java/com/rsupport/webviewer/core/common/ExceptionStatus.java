@@ -1,6 +1,14 @@
 package com.rsupport.webviewer.core.common;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.ToString;
+
+@AllArgsConstructor
+@ToString
+@Getter
 public enum ExceptionStatus {
+
     SUCCESS(1000, "success"),
     FAIL(2000, "fail"),
     DATA_SAVE_FAIL(902, ""),
@@ -120,22 +128,4 @@ public enum ExceptionStatus {
 
     private final int code;
     private final String messsage;
-
-    ExceptionStatus(int code, String messsage) {
-        this.code = code;
-        this.messsage = messsage;
-    }
-
-    public int code() {
-        return code;
-    }
-
-    public String message() {
-        return messsage;
-    }
-
-    @Override
-    public String toString() {
-        return Integer.toString(code);
-    }
 }

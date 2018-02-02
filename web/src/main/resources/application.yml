@@ -20,10 +20,15 @@ logging:
           org.hibernate.SQL : debug
           org.hibernate.type.descriptor.sql.BasicBinder : trace
 
+webviewer:
+      role : webdeveloper
+      project :
+          name : 윤창희
+          age : 10
+      team :
+          part : rc5x
 key:
-      chang : 윤창희
-
-
+      chang : yunchahee
 
 
 

@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Getter
 @Setter
 @ToString
-@XmlRootElement
 public class SupportRoomRequestVO extends RequestVO {
 
     private static final long serialVersionUID = -295940620274122737L;

@@ -33,4 +33,6 @@ public class SupportRoomBaseRepositoryTest extends BaseRepositoryTest {
         entityManager.persist(supportRoom);
         entityManager.flush();
     }
+
+
 }

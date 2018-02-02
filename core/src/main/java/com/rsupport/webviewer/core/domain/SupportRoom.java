@@ -9,13 +9,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@EqualsAndHashCode(callSuper = false, of = {"id"})
-@ToString
-@NoArgsConstructor
+
+@Data
 @Table(name = "rt_support_room")
 @Entity
-@Data
-@AllArgsConstructor
 public class SupportRoom {
 
     @Id
