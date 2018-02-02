@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
+//Module 분리시 EntityScan 이 정상적으로 이루어지지 않고 이씀.......
 @SpringBootApplication
 @EnableAutoConfiguration
 @EnableJpaRepositories(basePackages = {"com.rsupport.webviewer.core.repository"})
