@@ -30,12 +30,12 @@ public class SupportRoomControllerTest {
     @Ignore
     @Test
     public void testExample() throws Exception {
-        BDDMockito.given(this.supportRoomManager.getSupportRoomByName("4444"))
-                .willReturn(new SupportRoom("1", "2222", "4444"));
-
-        this.mvc.perform(MockMvcRequestBuilders.get("/supportRoom/list?name=4444").accept(MediaType.APPLICATION_JSON))
-                .andExpect(MockMvcResultMatchers.status().isOk())
-                .andDo(MockMvcResultHandlers.print())
-                .andExpect(MockMvcResultMatchers.content().json("{ \"devicekey\":\"changhee\",\"deviceNo\":\"changhe2\",\"supportType\":\"supportType\"}"));
+//        BDDMockito.given(this.supportRoomManager.getSupportRoomByName("4444"))
+//                .willReturn(new SupportRoom("1", "2222", "4444"));
+//
+//        this.mvc.perform(MockMvcRequestBuilders.get("/supportRoom/list?name=4444").accept(MediaType.APPLICATION_JSON))
+//                .andExpect(MockMvcResultMatchers.status().isOk())
+//                .andDo(MockMvcResultHandlers.print())
+//                .andExpect(MockMvcResultMatchers.content().json("{ \"devicekey\":\"changhee\",\"deviceNo\":\"changhe2\",\"supportType\":\"supportType\"}"));
     }
 }

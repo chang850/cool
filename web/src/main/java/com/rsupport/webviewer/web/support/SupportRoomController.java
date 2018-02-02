@@ -21,9 +21,9 @@ public class SupportRoomController {
     }
 
     @GetMapping(value = "/list")
-    public ResponseEntity<?> list(@RequestParam String name) {
+    public ResponseEntity<?> list(SupportRoomRequestVO requestVO) {
 
-        SupportRoom supportRoom = supportRoomManager.getSupportRoomByName(name);
+        SupportRoom supportRoom = supportRoomManager.getSupportRoomByName("chang850");
 
         if (supportRoom == null) {
             throw new SupportNotFoundException();

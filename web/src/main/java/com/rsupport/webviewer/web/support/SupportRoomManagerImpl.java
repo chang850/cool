@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
 @Service("supportRoomManager")
 @RequiredArgsConstructor
 public class SupportRoomManagerImpl implements SupportRoomManager {
+    //AutoWired --> 삭제 됨
 
-    @Autowired
-    private SupportRoomRepository supportRoomRepository;
+    private final SupportRoomRepository supportRoomRepository;
 
     @Override
     public SupportRoom getSupportRoomByName(String name) {
