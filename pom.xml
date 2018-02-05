@@ -37,6 +37,7 @@
         <poi.version>3.8</poi.version>
         <hibernate.dialect>org.hibernate.dialect.MySQL5Dialect</hibernate.dialect>
         <jackson2.version>2.3.2</jackson2.version>
+        <swagger2.version>2.2.2</swagger2.version>
     </properties>
     <dependencyManagement>
         <dependencies>
